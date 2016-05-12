@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<!-- Added link to the jQuery Library -->
+	<script src="https://code.jquery.com/jquery-2.2.3.js" integrity="sha256-laXWtGydpwqJ8JA+X9x2miwmaiKhn8tVmOVEigRNtP4=" crossorigin="anonymous"></script>
+	<link rel="stylesheet" type="text/css" href="assets/css/reset.css">
+	<link rel="stylesheet" type="text/css" href="assets/css/style.css">
+	<link href='https://fonts.googleapis.com/css?family=Open+Sans' rel='stylesheet' type='text/css'>
+	<link href='https://fonts.googleapis.com/css?family=Indie+Flower' rel='stylesheet' type='text/css'>
+	<script type="text/javascript" src="assets/javascript/game.js"></script>
+	<title>JavaScript Hangman</title>
+</head>
+<body>
+
+	<header>
+		<img src="assets/images/javascript_logo_300x300.png">
+		<p id="headerText">HANGMAN</p>
+	</header>
+
+	<main>
+		<!--<img class="background" src="assets/images/js_background.gif">-->
+		<div class="mainBox">
+			<div class="box box1">
+				<p>Press any key to start guessing the word!</p><br><br>
+				<div id="currentWord">Current Word<br><br></div>
+				<div id="wins">Wins<br><br></div>
+				<div id="guesses">Number of Guesses Remaining<br><br></div>
+				<div id="lettersGuessed">Letters Already Guessed:<br><br></div>
+
+			</div>
+			<div class="box box2">
+				<button id="reset">Play Again</button>
+			</div>
+		</div>
+	</main>
+	<footer>
+		<p>&copy; Copyright 2016 Justin Ryan LeBlanc</p>
+	</footer>
+
+</body>
+</html>

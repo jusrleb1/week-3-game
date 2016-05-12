@@ -1,0 +1,186 @@
+body {
+    color: #e5bb31;
+    background: #f8ea84;
+    font-family: 'Open Sans',Arial,Helvetica,sans-serif;
+    width: 100%;
+}
+
+header {
+    font-family: 'Indie Flower', cursive;
+    font-size: 220px;
+    width: 900px;
+    margin-left: auto;
+    margin-right: auto;
+    z-index: 0;
+    height: 360px;
+}
+
+header img {
+    float: left;
+    z-index: -1;
+    position: relative;
+    /* top: 60px; */
+    left: 201px;
+}
+
+#headerText {
+    
+    z-index: 1;
+    
+    position: relative;
+    
+    top: -69px;
+}
+
+main {
+    display: block;
+    position: relative;
+}
+main::after {
+    content: "";
+    background: url(../images/js_background.gif) no-repeat center center;
+    opacity: 0.1;
+    top: 0;
+    left: 0;
+    bottom: 0;
+    right: 0;
+    position: absolute;
+    z-index: -1;
+}
+
+.background {
+    visibility: hidden;
+}
+
+footer {
+    width: 900px;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+footer p {
+    text-align: center;
+}
+img {
+
+}
+
+p {
+
+}
+
+.mainBox {
+    height: 710px;
+}
+
+.mainBox p {
+    
+    text-align: center;
+    
+    font-size: 30px;
+}
+.box {
+
+}
+
+.box1 {
+    
+    margin-left: auto;
+    
+    margin-right: auto;
+    
+    width: 900px;
+    
+    padding-top: 80px;
+    
+    color: #000;
+    
+    font-weight: bolder;
+    
+    font-size: larger;
+}
+
+.box2 {
+    
+    text-align: center;
+    
+    font-size: 30px;
+}
+
+#wins {
+    
+    margin-top: 20px;
+}
+
+#currentWord {
+    
+    text-align: center;
+    
+    font-size: 30px;
+}
+
+#theWord {
+    margin: 0;
+    display: block;
+    padding: 0;
+    display: block;
+    font-family: 'Indie Flower', cursive;
+    font-size: 50px;
+    color: #000;
+}
+
+#theWord li {
+    position: relative;
+    list-style: none;
+    margin: 0;
+    display: inline-block;
+    padding: 0 10px;
+    font-size: 1.6em;
+}
+
+#guesses {
+
+}
+
+#lettersGuessed {
+
+}
+
+#reset {
+    background: #e5bb31;
+    padding: 10px 20px;
+    font-family: 'Indie Flower', cursive;
+    font-size: 60px;
+    border: none;
+    border-radius: 20px;
+    color: #f8ea84;
+    margin-top: 15px;
+}
+
+#reset:after {
+    content: "";
+    background: #f8ea84;
+    display: block;
+    position: absolute;
+    padding-top: 14%;
+    padding-left: 18%;
+    margin-left: -20px!important;
+    margin-top: -10%;
+    opacity: 0;
+    transition: all .8s;
+}
+
+#reset:active:after {
+    padding: 0;
+    margin: 0;
+    opacity: 1;
+    transition: 0s
+}
+
+#reset:hover {
+    box-shadow: 0 12px 16px 0 rgba(0,0,0,0.24),0 17px 50px 0 rgba(0,0,0,0.19);
+}
+
+#reset:focus {
+    outline: 0;
+}
